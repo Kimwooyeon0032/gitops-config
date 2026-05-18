@@ -10,9 +10,6 @@ images:
 - name: gitops-app
   newName: woo0032/gitops-app
   newTag: sha-b6c503f
-- name: nginx
-  newName: your-dockerhub-username/gitops-app
-  newTag: sha-fa7fa69
 
 replicas:
 - count: 1
