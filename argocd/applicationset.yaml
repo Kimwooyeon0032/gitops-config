@@ -6,9 +6,9 @@ metadata:
 spec:
   generators:
     - list:
-      elements:
-        - env: dev
-        - env: prod
+        elements:
+          - env: dev
+          - env: prod
   template:
     metadata:
       name: "gitops-app-{{env}}"
@@ -27,4 +27,3 @@ spec:
           selfHeal: true
         syncOptions:
           - CreateNamespace=true
-          
