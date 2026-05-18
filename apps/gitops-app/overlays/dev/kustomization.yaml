@@ -1,16 +1,19 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../base
+- ../../base
 namespace: gitops-app-dev
 namePrefix: dev-
 commonLabels:
   env: dev
 images:
-  - name: gitops-app
-    newName: woo0032/gitops-app
-    newTag: latest
+- name: gitops-app
+  newName: woo0032/gitops-app
+  newTag: latest
+- name: nginx
+  newName: your-dockerhub-username/gitops-app
+  newTag: sha-fa7fa69
 
 replicas:
-  - name: gitops-app
-    count: 1
+- count: 1
+  name: gitops-app
