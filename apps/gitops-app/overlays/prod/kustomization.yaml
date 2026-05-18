@@ -12,5 +12,5 @@ images:
     newTag: latest
 
 replicas:
-  -name: gitops-app
+  - name: gitops-app
   count: 3
