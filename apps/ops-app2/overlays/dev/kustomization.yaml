@@ -9,7 +9,7 @@ namespace: ops-app2-dev
 images:
 - name: ops-app2
   newName: woo0032/ops-app2
-  newTag: sha-7ad83f0
+  newTag: sha-dc35a20
 
 patches:
 - patch: |-
